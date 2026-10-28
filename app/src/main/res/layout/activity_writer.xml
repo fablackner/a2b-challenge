@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WriterActivity"
+    android:background="@drawable/background">
+
+
+    <ImageView
+        android:id="@+id/logoIV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
+
+    <org.osmdroid.views.MapView
+        android:id="@+id/mapView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/informationIV"
+        app:layout_constraintEnd_toEndOf="@id/logoIV"
+        app:layout_constraintStart_toStartOf="@id/logoIV"
+        app:layout_constraintTop_toBottomOf="@id/logoIV" />
+
+    <ImageView
+        android:id="@+id/scanTagIV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/logoIV"
+        app:layout_constraintHorizontal_bias="0.13"
+        app:layout_constraintStart_toStartOf="@id/logoIV"
+        app:layout_constraintTop_toBottomOf="@+id/informationIV"
+        app:srcCompat="@drawable/scan_start_tag" />
+
+    <ImageView
+        android:id="@+id/informationIV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="70dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/logoIV"
+        app:layout_constraintStart_toStartOf="@id/logoIV"
+        app:srcCompat="@drawable/information" />
+
+    <EditText
+        android:id="@+id/trackNameET"
+        android:layout_width="0dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="91dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:background="@null"
+        android:ems="9"
+        android:fontFamily="@font/quantico"
+        android:inputType="textPersonName"
+        android:maxLength="28"
+        android:paddingBottom="0sp"
+        android:textAllCaps="false"
+        android:textColor="#720646"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/informationIV"
+        app:layout_constraintHorizontal_bias="0.78"
+        app:layout_constraintStart_toStartOf="@+id/informationIV"
+        app:layout_constraintTop_toTopOf="@+id/informationIV" />
+
+    <EditText
+        android:id="@+id/descriptionET"
+        android:layout_width="0dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="69dp"
+        android:layout_marginEnd="10dp"
+        android:background="@null"
+        android:ems="8"
+        android:fontFamily="@font/quantico"
+        android:gravity="top|start"
+        android:inputType="textMultiLine"
+        android:lineSpacingExtra="-3sp"
+        android:lines="3"
+        android:maxLength="114"
+        android:maxLines="3"
+        android:minLines="3"
+        android:paddingBottom="0sp"
+        android:singleLine="false"
+        android:textAllCaps="false"
+        android:textColor="#720646"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/informationIV"
+        app:layout_constraintStart_toStartOf="@+id/informationIV"
+        app:layout_constraintTop_toTopOf="@+id/informationIV" />
+
+    <ImageButton
+        android:id="@+id/updateMarkerIB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginBottom="8dp"
+        android:background="?android:selectableItemBackground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/logoIV"
+        app:layout_constraintHorizontal_bias="0.07"
+        app:layout_constraintStart_toEndOf="@+id/scanTagIV"
+        app:layout_constraintTop_toBottomOf="@+id/informationIV"
+        app:srcCompat="@drawable/update_marker" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/background">
+
+
+    <ImageView
+        android:id="@+id/firstPlaceIV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/first_place" />
+
+    <ImageView
+        android:id="@+id/secondPlaceIV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/firstPlaceIV"
+        app:srcCompat="@drawable/second_place" />
+
+    <ImageView
+        android:id="@+id/thirdPlaceIV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/secondPlaceIV"
+        app:srcCompat="@drawable/third_place" />
+
+    <TextView
+        android:id="@+id/firstPlaceTimeTV"
+        android:layout_width="243dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginRight="100dp"
+        android:lineSpacingExtra="8sp"
+        android:text="-- min -- sec"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="#992699"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:typeface="normal"
+        app:fontFamily="sans-serif-condensed-medium"
+        app:layout_constraintBottom_toBottomOf="@+id/firstPlaceIV"
+        app:layout_constraintEnd_toEndOf="@+id/firstPlaceIV"
+        app:layout_constraintStart_toStartOf="@+id/firstPlaceIV"
+        app:layout_constraintTop_toTopOf="@+id/firstPlaceIV" />
+
+    <TextView
+        android:id="@+id/secondPlaceTimeTV"
+        android:layout_width="243dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginRight="100dp"
+        android:lineSpacingExtra="8sp"
+        android:text="-- min -- sec"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="#992699"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:typeface="normal"
+        app:fontFamily="sans-serif-condensed-medium"
+        app:layout_constraintBottom_toBottomOf="@+id/secondPlaceIV"
+        app:layout_constraintEnd_toEndOf="@+id/secondPlaceIV"
+        app:layout_constraintStart_toStartOf="@+id/secondPlaceIV"
+        app:layout_constraintTop_toTopOf="@+id/secondPlaceIV" />
+
+    <TextView
+        android:id="@+id/thirdPlaceTimeTV"
+        android:layout_width="243dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginRight="100dp"
+        android:lineSpacingExtra="8sp"
+        android:text="-- min -- sec"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="#992699"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:typeface="normal"
+        app:fontFamily="sans-serif-condensed-medium"
+        app:layout_constraintBottom_toBottomOf="@+id/thirdPlaceIV"
+        app:layout_constraintEnd_toEndOf="@+id/thirdPlaceIV"
+        app:layout_constraintStart_toStartOf="@+id/thirdPlaceIV"
+        app:layout_constraintTop_toTopOf="@+id/thirdPlaceIV" />
+
+    <TextView
+        android:id="@+id/firstPlaceNameTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginBottom="16dp"
+        android:text="--------"
+        app:fontFamily="sans-serif-black"
+        app:layout_constraintBottom_toBottomOf="@+id/firstPlaceIV"
+        app:layout_constraintEnd_toEndOf="@+id/firstPlaceIV"
+        app:layout_constraintTop_toTopOf="@+id/firstPlaceIV" />
+
+    <TextView
+        android:id="@+id/thirdPlaceNameTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginBottom="16dp"
+        android:text="--------"
+        app:fontFamily="sans-serif-black"
+        app:layout_constraintBottom_toBottomOf="@+id/thirdPlaceIV"
+        app:layout_constraintEnd_toEndOf="@+id/thirdPlaceIV"
+        app:layout_constraintTop_toTopOf="@+id/thirdPlaceIV" />
+
+    <TextView
+        android:id="@+id/secondPlaceNameTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginBottom="16dp"
+        android:text="--------"
+        app:fontFamily="sans-serif-black"
+        app:layout_constraintBottom_toBottomOf="@+id/secondPlaceIV"
+        app:layout_constraintEnd_toEndOf="@+id/secondPlaceIV"
+        app:layout_constraintTop_toTopOf="@+id/secondPlaceIV" />
+
+    <TextView
+        android:id="@+id/firstPlaceDateTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:text="--.--.----"
+        app:fontFamily="sans-serif-black"
+        app:layout_constraintBottom_toBottomOf="@+id/firstPlaceIV"
+        app:layout_constraintEnd_toEndOf="@+id/firstPlaceIV"
+        app:layout_constraintTop_toTopOf="@+id/firstPlaceIV" />
+
+    <TextView
+        android:id="@+id/thirdPlaceDateTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:text="--.--.----"
+        app:fontFamily="sans-serif-black"
+        app:layout_constraintBottom_toBottomOf="@+id/thirdPlaceIV"
+        app:layout_constraintEnd_toEndOf="@+id/thirdPlaceIV"
+        app:layout_constraintTop_toTopOf="@+id/thirdPlaceIV" />
+
+    <TextView
+        android:id="@+id/secondPlaceDateTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:text="--.--.----"
+        app:fontFamily="sans-serif-black"
+        app:layout_constraintBottom_toBottomOf="@+id/secondPlaceIV"
+        app:layout_constraintEnd_toEndOf="@+id/secondPlaceIV"
+        app:layout_constraintTop_toTopOf="@+id/secondPlaceIV" />
+
+    <ImageButton
+        android:id="@+id/restartIB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:background="?android:selectableItemBackground"
+        android:onClick="restart"
+        android:src="@drawable/restart"
+        app:layout_constraintEnd_toEndOf="@+id/thirdPlaceIV"
+        app:layout_constraintStart_toStartOf="@+id/thirdPlaceIV"
+        app:layout_constraintTop_toBottomOf="@+id/thirdPlaceIV" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">A2B</string>
+    <string name="version">This is version 3.0.0</string>
+    <string name="description">This App is written for people who live in pure anarchy, chaos and destruction!
+        Without hope for a better life the only reason to exist any further is to find the path of shortest duration.
+        It\'s not a sport, it\'s not a competition, it\'s an ancient urge that dates back to the
+        old runes of Valhalla and the immortal souls existing there. Those souls spoke out of Fermat when he formulated
+        his epic principle and those souls drive us in our quest to find: THE PATH OF SHORTEST DURATION! </string>
+    <string name="manual">Set up a new track: \n
+        1. Click the "set new track" button in the menu. \n
+        2. Touch and hold the marker B on the map to drag it onto the position where the FINISH tag is located. The button "update marker"
+        moves the marker to the current position. \n
+        3. Scan the FINISH tag. \n
+        4. Touch and hold the marker A on the map to drag it onto the position where the START tag is located. \n
+        5. Fill in the track name and a short message/description/greeting/poem. \n
+        6. Scan the START tag and wait for the SUCCESS!!\n\n </string>
+
+    <string name="distance_format">%1$d m</string>
+    <string name="clock_format">%1$dmin %2$02dsec</string>
+    <string name="time_format">%1$d min %2$02d sec</string>
+    <string name="time_empty">-- min -- sec</string>
+
+    <string name="tag_empty">This tag is empty — there\'s no track on it yet. Use \"Set new track\" in the menu to write one.</string>
+    <string name="tag_not_a_track">This tag holds something else, not an A2B track</string>
+    <string name="tag_unsupported">This kind of tag can\'t hold an A2B track</string>
+    <string name="track_upload_pending">Track saved! It will be published online once you\'re connected.</string>
+    <string name="different_track">This start tag belongs to a different track</string>
+    <string name="wrong_finish_tag">Not the proper FINISH tag :(</string>
+    <string name="tag_write_failed">Could not write to the tag — hold the phone still on it and try again</string>
+    <string name="track_deleted">Deleted!</string>
+    <string name="permission_denied">Permission denied :(</string>
+    <string name="name_required">Give your track a name first</string>
+
+    <string name="marker_start">Start</string>
+    <string name="marker_finish">Finish</string>
+    <string name="hint_track_name">insert track name</string>
+    <string name="hint_description">insert description</string>
+
+    <string name="menu_set_new_track">Set new track</string>
+    <string name="menu_my_tracks">My Tracks</string>
+    <string name="menu_my_records">My Records</string>
+    <string name="menu_settings">Settings</string>
+    <string name="menu_about">About</string>
+
+    <string name="pref_update_tag_title">Write high score to finish tag?</string>
+    <string name="pref_update_tag_summary">Check if you want your top-three times written onto the finish tag</string>
+    <string name="pref_nickname_title">What\'s your nickname?</string>
+    <string name="pref_nickname_dialog_message">Your nickname is written to the finish tag when you make it into the top three.</string>
+    <string name="pref_nickname_dialog_title">What\'s your nickname?</string>
+</resources>
